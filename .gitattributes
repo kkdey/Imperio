@@ -1,0 +1,4 @@
+data/PCHiC_peak_matrix_cutoff5.tsv filter=lfs diff=lfs merge=lfs -text
+data/ABCpaper_NasserFulcoEngreitz2020_Blood_AvgHiC.txt.gz filter=lfs diff=lfs merge=lfs -text
+data/Roadmap_Enhancers_Blood.txt filter=lfs diff=lfs merge=lfs -text
+code/Test_Beds/geneset_example/Roadmap_Enhancer.bed filter=lfs diff=lfs merge=lfs -text
