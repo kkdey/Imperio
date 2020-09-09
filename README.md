@@ -15,26 +15,41 @@ If you use the ABC S2G strategies please cite Nasser, J., Engreitz, J. et al. un
 The repository provides a set of tools to integrate functional information on top of trained genomic deep learning models. The codes can be classified into following categories 
 
 - **DeepBoost: Boosted deep learning annotations using functionally finemapped SNPs + S2G strategies + gene sets**
-      - *code/deepboost.R* : Run classification model to separate fine-mapped SNPs from control using deep learning annotations on
-         even (odd) chromosomes and predict labels on SNPs from odd (even) chromosomes.
+
+      - *code/deepboost.R* : Run classification model to separate fine-mapped SNPs from control using deep learning annotations            on even (odd) chromosomes and predict labels on SNPs from odd (even) chromosomes.
+      
       - *code/deepboost_s2g.R*: Combine boosted deep learning annotations with S2G strategies 
+      
       - *code/geneset_to_bed.R* : Create S2G bedgraph files from a gene set file (check `code/README_GSSSG.txt`)
+      
       - *code/clean_bed.sh*: Postprocess S2G bedgraph files from a gene set from previous step.
+      
       - *code/bedgraph_to_annot.py*: Convert S2G bedgraph files for a geneset to SNP annotations.
 
-      check `code/README_GSSSG.txt` for an illustration of how to generate SNP level annotations starting from a gene set file.
+  check `code/README_GSSSG.txt` for an illustration of how to generate SNP level annotations starting from a gene set file.
 
 - **Imperio: Predicted blood expression using deep learning models combined with S2G strategies**
+
       - *code/imperio_100kb_features.R*: Build Imperio per chr features for 100kb S2G strategy
+      
       - *code/imperio_5kb_features.R*: Build Imperio per chr features for 5kb S2G strategy
+      
       - *code/imperio_TSS_features.R*: Build Imperio per chr features for TSS S2G strategy
+      
       - *code/imperio_ABC_features.R*: Build Imperio per chr features for ABC(blood) S2G strategy
+      
       - *code/imperio_Roadmap_features.R*: Build Imperio per chr features for Roadmap(blood) S2G strategy
+      
       - *code/imperio_aggregate_s2g.R*: Aggregate features across chromosomes for each S2G strategy
+      
       - *code/imperio_xgboost_train.R*: Run Imperio regression model 
+      
       - *code/imperio_s2g_mapping.R*: Perform mapping of SNPs to genes using different S2G strategies
-      - *code/imperio_snp_table_merge.R*: Merge S2G strategies as a step to build SNP level annotation.
+      
+      - *code/imperio_snp_table_merge.R*: Merge S2G strategies as a step to build SNP level annotation
+      
       - *code/imperio_calc_delta.R*: Generate Imperio SNP level annotation per S2G strategy 
+      
       - *code/imperio_MAF_annots.R*: Generate MAF corrected Imperio SNP level annotation
       
 ## Annotations
